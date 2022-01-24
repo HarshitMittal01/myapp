@@ -8,14 +8,15 @@ class Educational extends StatefulWidget {
 class _EducationalState extends State<Educational>{
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return SafeArea(
+        child: Scaffold(
       backgroundColor: Colors.grey[900],
       appBar: AppBar(
         title: Text(
             'EDUCATIONAL DETAILS',
             style: TextStyle(
                 letterSpacing: 2.0,
-                fontSize: 50.0,
+                fontSize: 20.0,
                 fontWeight: FontWeight.bold
             )
         ),
@@ -23,12 +24,42 @@ class _EducationalState extends State<Educational>{
         backgroundColor: Colors.grey[850],
         elevation: 2.0,
       ),
-      body: Padding(
+    body: SingleChildScrollView(
+    child: Stack(
+    children: [
+      Padding(
         padding: EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'SCHOOL:\nHANSRAJ MODEL SCHOOL',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -36,19 +67,47 @@ class _EducationalState extends State<Educational>{
                     Icons.apartment
                 ),
                 label: Text(
-                    'SCHOOL: HANSRAJ MODEL SCHOOL',
+                    'SCHOOL:\nHANSRAJ MODEL SCHOOL',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.amberAccent[200],
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        '10th PERCENTAGE:\n95.8%',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed:() {},
@@ -56,19 +115,47 @@ class _EducationalState extends State<Educational>{
                     Icons.analytics_outlined
                 ),
                 label: Text(
-                    '10th PERCENTAGE: 95.8%',
+                    '10th PERCENTAGE:\n95.8%',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        '12th PERCENTAGE:\n95.2%',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -76,19 +163,47 @@ class _EducationalState extends State<Educational>{
                     Icons.analytics_outlined
                 ),
                 label: Text(
-                    '12th PERCENTAGE: 95.2%',
+                    '12th PERCENTAGE:\n95.2%',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.amberAccent[200],
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'AIR JEE MAINS:\n8139',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -96,19 +211,47 @@ class _EducationalState extends State<Educational>{
                     Icons.wysiwyg
                 ),
                 label: Text(
-                    'ALL INDIA RANK JEE MAINS: 8139',
+                    'AIR JEE MAINS:\n8139',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'AIR JEE ADVANCED:\n7666',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -116,19 +259,47 @@ class _EducationalState extends State<Educational>{
                     Icons.wysiwyg
                 ),
                 label: Text(
-                    'ALL INDIA RANK JEE ADVANCED: 7666',
+                    'AIR JEE ADVANCED:\n7666',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.amberAccent[200],
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'COLLEGE:\nNSUT',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -136,19 +307,47 @@ class _EducationalState extends State<Educational>{
                     Icons.apartment
                 ),
                 label: Text(
-                    'COLLEGE: NETAJI SUBHAS UNIVERSITY OF TECHNOLOGY',
+                    'COLLEGE:\nNSUT',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.amberAccent[200],
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'BRANCH:\nCSDS',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -156,19 +355,47 @@ class _EducationalState extends State<Educational>{
                     Icons.assignment
                 ),
                 label: Text(
-                    'BRANCH: COMPUTER SCIENCE WITH DATA SCIENCE SPECIALISATION',
+                    'BRANCH:\nCSDS',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'MEMBER:\nIOSD',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -176,20 +403,25 @@ class _EducationalState extends State<Educational>{
                     Icons.account_circle
                 ),
                 label: Text(
-                    'MEMBER: INTERNATIONAL ORGANISATION OF SOFTWARE DEVELOPERS',
+                    'MEMBER:\nIOSD',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.amberAccent[200],
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
           ],
         ),
       ),
+    ],
+    ),
+    ),
+        ),
     );
   }
 }

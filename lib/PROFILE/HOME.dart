@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-
+import 'professional.dart';
+import 'personal.dart';
+import 'educational.dart';
 class Home extends StatefulWidget {
   @override
   _HomeState createState() => _HomeState();
@@ -15,7 +17,7 @@ class _HomeState extends State<Home>{
             'PROFILE PAGE',
             style: TextStyle(
                 letterSpacing: 2.0,
-                fontSize: 50.0,
+                fontSize: 30.0,
                 fontWeight: FontWeight.bold
             )
         ),
@@ -28,69 +30,90 @@ class _HomeState extends State<Home>{
         child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ElevatedButton.icon(
-                onPressed:() {
-                  Navigator.pushNamed(context, '/personal');
-                },
-                icon: Icon(
-                    Icons.accessibility
+            InkWell(
+              onTap: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Personal())
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.all(15.0),
+                margin: EdgeInsets.only(bottom: 10),
+                decoration: BoxDecoration(
+                  color:Colors.cyanAccent,
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
-                label: Text(
-                    'PERSONAL INFO',
-                    style: TextStyle(
-                        color: Colors.pinkAccent,
-                        letterSpacing: 2.0,
-                        fontSize: 30.0,
-                        fontWeight: FontWeight.bold
+                width: MediaQuery.of(context).size.width * 0.7,
+                child: Center(
+                    child: Text(
+                        'Personal Info',
+                        style: TextStyle(
+                            color: Colors.pinkAccent,
+                            letterSpacing: 2.0,
+                            fontSize: 24.0,
+                            fontWeight: FontWeight.bold
+                        )
                     )
                 ),
-                style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.cyanAccent)),
               ),
             ),
             SizedBox(height: 20.0),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ElevatedButton.icon(
-                onPressed:() {
-                  Navigator.pushNamed(context, '/educational');
-                },
-                icon: Icon(
-                    Icons.account_balance
+            InkWell(
+              onTap: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Educational())
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.all(15.0),
+                margin: EdgeInsets.only(bottom: 10),
+                decoration: BoxDecoration(
+                  color:Colors.cyanAccent,
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
-                label: Text(
-                    'EDUCATIONAL INFO',
-                    style: TextStyle(
-                        color: Colors.pinkAccent,
-                        letterSpacing: 2.0,
-                        fontSize: 30.0,
-                        fontWeight: FontWeight.bold
+                width: MediaQuery.of(context).size.width * 0.7,
+                child: Center(
+                    child: Text(
+                        'Educational Info',
+                        style: TextStyle(
+                            color: Colors.pinkAccent,
+                            letterSpacing: 2.0,
+                            fontSize: 24.0,
+                            fontWeight: FontWeight.bold
+                        )
                     )
                 ),
-                style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.cyanAccent)),
               ),
             ),
             SizedBox(height: 20.0),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: ElevatedButton.icon(
-                onPressed:() {
-                  Navigator.pushNamed(context, '/professional');
-                },
-                icon: Icon(
-                    Icons.work_rounded
+            InkWell(
+              onTap: (){
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Professional())
+                );
+              },
+              child: Container(
+                padding: const EdgeInsets.all(15.0),
+                margin: EdgeInsets.only(bottom: 10),
+                decoration: BoxDecoration(
+                  color:Colors.cyanAccent,
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
                 ),
-                label: Text(
-                    'PROFESSIONAL INFO',
-                    style: TextStyle(
-                        color: Colors.pinkAccent,
-                        letterSpacing: 2.0,
-                        fontSize: 30.0,
-                        fontWeight: FontWeight.bold
-                    )
+                width: MediaQuery.of(context).size.width * 0.7,
+                child: Center(
+                  child: Text(
+                    'Professional Info',
+                      style: TextStyle(
+                          color: Colors.pinkAccent,
+                          letterSpacing: 2.0,
+                          fontSize: 24.0,
+                          fontWeight: FontWeight.bold
+                      )
+                  )
                 ),
-                style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.cyanAccent)),
               ),
             ),
           ],

@@ -15,7 +15,7 @@ class _ProfessionalState extends State<Professional>{
             'PROFESSIONAL DETAILS',
             style: TextStyle(
                 letterSpacing: 2.0,
-                fontSize: 50.0,
+                fontSize: 20.0,
                 fontWeight: FontWeight.bold
             )
         ),
@@ -28,7 +28,7 @@ class _ProfessionalState extends State<Professional>{
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Padding(
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -36,19 +36,75 @@ class _ProfessionalState extends State<Professional>{
                     Icons.accessibility
                 ),
                 label: Text(
-                    'CURRENT PROFF.:STUDENT',
+                    'CURRENT PROFESSION :\nSTUDENT',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.amberAccent[200],
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
             ),
+            SizedBox(height: 20.0),*/
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'CURRENT PROFESSION:\nSTUDENT',
+                      textAlign: TextAlign.center,
+                    style: TextStyle(
+                        color: Colors.amberAccent[200],
+                        letterSpacing: 2.0,
+                        fontSize: 15.0,
+                        fontWeight: FontWeight.bold
+                    )
+                      ),
+                  ],
+                ),
+              ),
+            ),
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'CURRENT PROJECT:\nAPP DEV TASK',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed:() {},
@@ -56,19 +112,20 @@ class _ProfessionalState extends State<Professional>{
                     Icons.assignment_outlined
                 ),
                 label: Text(
-                    'CURRENT PROJECT: APP DEV TASK',
+                    'CURRENT PROJECT:\nAPP DEV TASK',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -76,19 +133,47 @@ class _ProfessionalState extends State<Professional>{
                     Icons.assignment_outlined
                 ),
                 label: Text(
-                    'FUTURE PROJECT: NSUT EATS',
+                    'FUTURE PROJECT:\nNSUT EATS',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.amberAccent[200],
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
+            ),*/
+            //SizedBox(height: 20.0),
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'DREAM COMPANY:\nGOOGLE',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
             ),
-            SizedBox(height: 20.0),
-            Padding(
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -96,19 +181,47 @@ class _ProfessionalState extends State<Professional>{
                     Icons.widgets
                 ),
                 label: Text(
-                    'DREAM COMPANY: GOOGLE',
+                    'DREAM COMPANY:\nGOOGLE',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.white,
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
             SizedBox(height: 20.0),
-            Padding(
+            Container(
+              margin: const EdgeInsets.only(left:15,right:15),
+              decoration: BoxDecoration(
+                  color: Colors.grey[700],
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
+              alignment: Alignment.center,
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20.0,vertical: 20),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    Text(
+                        'FUTURE PLANS:\nSTARTUP IN TECH',
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: Colors.amberAccent[200],
+                            letterSpacing: 2.0,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold
+                        )
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            /*Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
                 onPressed: () {},
@@ -116,17 +229,18 @@ class _ProfessionalState extends State<Professional>{
                     Icons.apartment
                 ),
                 label: Text(
-                    'FUTURE PLANS: STARTUP IN TECH',
+                    'FUTURE PLANS:\nSTARTUP IN TECH',
+                    textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.amberAccent[200],
                         letterSpacing: 2.0,
-                        fontSize: 30.0,
+                        fontSize: 15.0,
                         fontWeight: FontWeight.bold
                     )
                 ),
                 style: ButtonStyle(backgroundColor: MaterialStateProperty.all<Color>(Colors.grey[700])),
               ),
-            ),
+            ),*/
           ],
         ),
       ),
